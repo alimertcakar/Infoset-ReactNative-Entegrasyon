@@ -5,23 +5,18 @@ import { ChatWidget } from '@infoset/react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <ChatWidget
-        isVisible={true}
-      // apiKey="2bdccbb3-dbbc-416e-ad21-787a5e578507"
-      // iosKey="2bdccbb3-dbbc-416e-ad21-787a5e578507"
-      // androidKey="2bdccbb3-dbbc-416e-ad21-787a5e578507"
-      />
+    <>
+      <View style={{ flex: 1, border: "1px solid red" }}>
+        <ChatWidget
+          isVisible={true}
+          apiKey="QJd96e0cYwppDjNLRlrCaxQKh0rRB1gK7XVg8xgQ"
+          iosKey="4PNh0ijgG1HFaBb5Jtof4nAdPB5kcDS1"
+          androidKey="7pTD3Cem3BKbQnxRpxFilQNqLfla4kf9"
+        />
+      </View>
+      <Text>deneme</Text>
       <StatusBar style="auto" />
-    </View>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
